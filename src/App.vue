@@ -7,14 +7,27 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   name: 'app',
   data () {
     return {
-      scroll: 0
+      scroll: 0,
+      login: 'admin@admin.com',
+      password: '$LSaP$*v'
     }
   },
   mounted () {
+    this.getAuthToken([this, {
+      username: this.login, password: this.password
+    }]).then(response => {
+      console.log(response)
+    })
+  },
+  methods: {
+    ...mapActions([
+      'getAuthToken'
+    ])
   },
   components: {
   }

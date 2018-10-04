@@ -1,7 +1,6 @@
 <template>
-  <div class="home">
-    <img src="/img/logo.png">
-  </div>
+  <main class="page" id="home">
+  </main>
 </template>
 
 <script>
