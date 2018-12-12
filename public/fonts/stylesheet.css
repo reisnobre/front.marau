@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Ocean Six';
+    src: url('OceanSix-Condensed.woff2') format('woff2'),
+        url('OceanSix-Condensed.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+

@@ -1,8 +1,13 @@
-// @font-face {
-//   font-family: 'Product Sans Regular';
-//   src: url('/public/fonts/Product-Sans-Regular.woff') format('woff2');
-// }
-// @font-face {
-//   font-family: 'Product Sans Bold';
-//   src: url('/public/fonts/Product-Sans-Bold.woff') format('woff2');
-// }
+@font-face {
+  font-family: 'Product Sans Regular';
+  src: url('/fonts/Product-Sans-Regular.woff') format('woff2');
+}
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: url('/fonts/Product-Sans-Bold.woff') format('woff2');
+}
+@font-face {
+  font-family: 'Ocean Six';
+  src: url('/fonts/OceanSix-Condensed.woff2') format('woff2'), url('/fonts/OceanSix-Condensed.woff') format('woff'); font-weight: 900; font-style: normal;
+}
+

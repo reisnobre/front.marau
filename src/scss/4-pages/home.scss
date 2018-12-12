@@ -1,0 +1,40 @@
+.page#home{
+  section.homeSec{
+    p{
+      font-size: 1.25em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    &#hero{
+      background-image: url('/img/backgrounds/hero.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      h1{
+        font-size: 4em;
+        color: white;
+      }
+      .wrapper{
+      }
+      button{
+        margin-top: 1rem;
+      }
+			#play{
+				background: none;
+				box-shadow: none;
+				padding: 0;
+				margin: 0;
+			}
+    }
+    &#tours{
+      color: $secundary;
+      h5{
+        font-family: 'Product Sans Bold';
+      }
+      .content{
+        height: 400px;
+        text-align: left;
+      }
+    }
+  }
+}

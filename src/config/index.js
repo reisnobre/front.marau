@@ -1,15 +1,15 @@
-import { clientId, clientSecret } from '../../.env'
+// import { clientId, clientSecret } from '../../.env'
 
 const env = process.env.NODE_ENV
 const dev = 'http://localhost:8000'
 const prod = 'http://nit.uesc.br/sisnit-server/public'
 
-const client = () => {
-  return {
-    client_id: clientId,
-    client_secret: clientSecret
-  }
-}
+// const client = () => {
+//   return {
+//     client_id: clientId,
+//     client_secret: clientSecret
+//   }
+// }
 
 const header = () => {
   const authTokens = JSON.parse(window.localStorage.getItem('authTokens'))
@@ -33,6 +33,5 @@ export const api = options => {
 }
 
 export {
-  client,
   header
 }

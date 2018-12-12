@@ -1,0 +1,40 @@
+.page#rides{
+  h2, p{
+    color: white;
+  }
+  section.ridesSec{
+    p{
+      font-size: 1.5em;
+      font-weight: 600;
+      max-width: 600px;
+    }
+    &#brome{
+      background-image: url('/img/backgrounds/brome.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &#lancha{
+      background-image: url('/img/backgrounds/lancha.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &#farol{
+      background-image: url('/img/backgrounds/farol.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &#taipu{
+      background-image: url('/img/backgrounds/taipu.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &#plan{
+      background-image: url('/img/icons/waves.svg');
+      background-color: $secundary;
+    }
+  }
+}

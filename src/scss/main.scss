@@ -19,8 +19,11 @@
 @import '2-global/fonts';
 @import '2-global/globals';
 
-// 3 - Modules
+// 3 - Components 
+@import '3-components/vheader';
 
 // 4 - pages
 @import '4-pages/index';
 @import '4-pages/home';
+@import '4-pages/rides';
+@import '4-pages/plan';

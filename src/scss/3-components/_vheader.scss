@@ -1,0 +1,48 @@
+header#super{
+  // position: fixed;
+  background: white;
+  width: 100%;
+  .columns{
+    .column{
+      width: auto;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      .content{
+        width: 100%;
+      }
+    }
+  }
+  #logo{
+    width: 200px;
+    height: 5rem;
+    svg{
+      height: 100%;
+      #Path_545, #Path_546, #Path_547{
+        fill: $secundary;
+      }
+    }
+    img{
+    }
+  }
+  #desktop{
+    ul{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      text-align: right;
+      li{
+        display: inline-block;
+        padding: 2rem 0.5rem;
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+  }
+  #mobile{
+  }
+}

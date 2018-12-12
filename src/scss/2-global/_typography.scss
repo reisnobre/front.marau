@@ -7,7 +7,7 @@ body{
   text-decoration: none;
   text-transform: none;
   h1, h2, h3, h4, h5, h6{
-    font-family: 'Product Sans Bold', sans-serif;
+    font-family: 'Ocean Six', sans-serif;
     font-weight: 600;
     line-height: 1.2;
     font-size: 1.6em;
@@ -16,13 +16,13 @@ body{
     color: $primary;
   }
   h1{
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 300;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
   }
   h2{
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 300;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
@@ -112,6 +112,31 @@ body{
     outline: none;
     border: none;
   }
+	input, textarea, .mx-input{
+		width: calc(100% - 2rem);
+		border: 1px solid #f2f2f2;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    height: auto;
+    color: #333;
+    &:focus{
+      outline: none;
+      outline-offset: 0;
+    }
+		&:not(:last-child){
+			margin-bottom: 1rem;
+		}
+	}
+  .mx-input{
+    width: 100%;
+  }
+	textarea{
+		resize: none;
+		width: calc(100% - 2rem) !important;
+		height: 160px;
+	}
 }
 
 .__small{

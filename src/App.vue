@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <v-header></v-header>
     <transition name="fade" mode="out-in">
       <router-view :scroll="scroll"></router-view>
     </transition>
@@ -7,29 +8,27 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import vHeader from './components/VHeader'
 export default {
   name: 'app',
   data () {
     return {
-      scroll: 0,
-      login: 'admin@admin.com',
-      password: '$LSaP$*v'
+      scroll: 0
+    }
+  },
+  beforeMount () {
+    if (!this.$route.matched.length) {
+      const target = this.$route.path.split('/').pop()
+      if (this.$router.options.routes.map(r => r.name).indexOf(target) !== -1) this.$router.push({ name: target })
+      else this.$router.push({ name: 'home' })
     }
   },
   mounted () {
-    this.getAuthToken([this, {
-      username: this.login, password: this.password
-    }]).then(response => {
-      console.log(response)
-    })
   },
   methods: {
-    ...mapActions([
-      'getAuthToken'
-    ])
   },
   components: {
+    vHeader
   }
 }
 </script>

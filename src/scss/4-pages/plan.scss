@@ -1,0 +1,56 @@
+.page#plan{
+  section.planSec{
+    &#hero{
+      background-image: url('/img/backgrounds/taipu.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      h1{
+        color: white;
+      }
+      p{
+        font-size: 1.25em;
+        max-width: 600px;
+      }
+    }
+    &#form{
+      background-image: url('/img/icons/waves.svg');
+      background-color: $secundary;
+      display: block;
+      .columns{
+        .column{
+          padding: 1rem;
+          flex-grow: 1;
+        }
+      }
+      label{
+        font-size: 2em;
+        text-align: left;
+        width: 100%;
+        display: block;
+        padding-left: 1rem;
+        font-weight: 600;
+      }
+      .mx-datepicker{
+        width: 100%;
+        .mx-input-wrapper{
+          .mx-input-append{
+            padding: 0;
+            padding-right: 1rem;
+            background: none;
+            height: auto;
+            top: calc(50% - 49px/2);
+            width: auto;
+            svg{
+              height: auto;
+              width: 2rem;
+            }
+
+          }
+        }
+      }
+      input{
+      }
+    }
+  }
+}
