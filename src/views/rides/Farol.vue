@@ -1,5 +1,6 @@
 <template>
   <section class="ridesSec" id="farol">
+    <div class="blur"></div>
     <div class="wrapper">
       <div class="content">
         <h2>Morro do Farol e Lagoas</h2>

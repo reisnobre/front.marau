@@ -1,5 +1,6 @@
 <template>
   <section class="ridesSec" id="lancha">
+    <div class="blur"></div>
     <div class="wrapper">
       <div class="content">
         <h2>Passeio de Lancha</h2>

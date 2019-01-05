@@ -7,6 +7,7 @@
           <div class="content">
             <div class="columns">
               <div class="column">
+                <img :src="`/img/slider/${slide.img}.jpg`" alt=""/>
               </div>
               <div class="column">
                 <h5>{{ slide.title }}</h5>
@@ -39,15 +40,18 @@ export default {
       slides: [
         {
           title: 'TOUR PELA PENÍSULA',
-          body: 'Passeio exclusivo e personalizado. Conheça as praias, trilha das Bromélias, lagoas, Taipu de Dentro, rio Carapitangui e o por do sol na Ponta do Mutá.'
+          body: 'Passeio exclusivo e personalizado. Conheça as praias, trilha das Bromélias, lagoas, Taipu de Dentro, rio Carapitangui e o por do sol na Ponta do Mutá.',
+          img: 'tour'
         },
         {
           title: 'ALUGUEL DE QUADRI',
-          body: 'Explore a Península de quadriciclo. Suba o morro do Farol, nade nas lagoas Azul e do Cassange, faça a trilha das Bromélias e conheça as praias.'
+          body: 'Explore a Península de quadriciclo. Suba o morro do Farol, nade nas lagoas Azul e do Cassange, faça a trilha das Bromélias e conheça as praias.',
+          img: 'quadri'
         },
         {
           title: 'PASSEIO AS ILHAS',
-          body: 'Desvende as ilhas da Baia de Camamu e a cachoeira de Tremembé a bordo de lancha exclusiva. Com paradas para banho e almoço.'
+          body: 'Desvende as ilhas da Baia de Camamu e a cachoeira de Tremembé a bordo de lancha exclusiva. Com paradas para banho e almoço.',
+          img: 'ilhas'
         }
       ]
     }

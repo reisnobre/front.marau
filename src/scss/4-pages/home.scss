@@ -1,15 +1,15 @@
 .page#home{
   section.homeSec{
-    p{
-      font-size: 1.25em;
-      max-width: 600px;
-      margin: 0 auto;
-    }
     &#hero{
-      background-image: url('/img/backgrounds/hero.jpg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      .blur{
+        background-image: url('/img/backgrounds/hero.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .sweet-content-content{
+        height: 400px;
+      }
       h1{
         font-size: 4em;
         color: white;
@@ -18,6 +18,7 @@
       }
       button{
         margin-top: 1rem;
+        font-size: 1.6em;
       }
 			#play{
 				background: none;
@@ -25,15 +26,70 @@
 				padding: 0;
 				margin: 0;
 			}
+      .sweet-modal{
+        width: 800px;
+        max-width: none;
+      }
     }
     &#tours{
       color: $secundary;
       h5{
         font-family: 'Product Sans Bold';
       }
+      .wrapper{
+        width: 100%;
+      }
       .content{
-        height: 400px;
+        height: 330px;
         text-align: left;
+        .columns{
+          .column{
+            padding: 0 0.5rem;
+            &:first-child{
+              width: 35%;
+            }
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include bp(max, 800px){
+  .page#home{
+    section.homeSec{
+      &#hero{
+        .sweet-modal{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include bp(max, $smallBP){
+  .page#home{
+    section.homeSec{
+      &#tours{
+        .content{
+          height: 550px;
+          .columns{
+            width: calc(100% - 2rem);
+            .column{
+              padding: 0;
+              &:first-child{
+                width: 100%;
+              }
+            }
+          }
+          p{
+            margin-left: 0;
+            width: 100%;
+          }
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
 <template>
   <section class="ridesSec" id="brome">
+    <div class="blur"></div>
     <div class="wrapper">
       <div class="content">
         <h2>Trilha das Bromelias</h2>

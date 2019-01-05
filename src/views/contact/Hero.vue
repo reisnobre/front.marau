@@ -3,8 +3,8 @@
     <div class="blur"></div>
     <div class="wrapper">
       <div class="content">
-        <h1>SUA VIAGEM COMEÇA AQUI</h1>
-        <p>Vamos precisar de alguns informações para dar a você a experiência que você merece. As informações fornecidas são completamente confidenciais e não serão compartilhadas.</p>
+        <h1>Fale Conosco</h1>
+        <p>Faremos de tudo para fazer com que a viagem dos seus sonhos aconteça!</p>
       </div>
     </div>
   </section>

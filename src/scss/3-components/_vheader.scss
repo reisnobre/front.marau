@@ -1,16 +1,64 @@
 header#super{
-  // position: fixed;
   background: white;
   width: 100%;
+  border-bottom: 2px solid #f2f2f2;
   .columns{
     .column{
-      width: auto;
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
-      .content{
-        width: 100%;
+      flex-grow: 2;
+      &:first-child{
+        width: auto;
+        flex-grow: 1;
       }
+    }
+  }
+  #desktop, #mobile{
+    #logo{
+      padding: 1rem 0;
+    }
+  }
+  #desktop{
+    nav{
+      ul{
+        list-style: none;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+        li{
+          display: inline-block;
+          padding: 2rem 0.5rem;
+          font-size: 20px;
+          cursor: pointer;
+          transition: color 0.3s ease;
+          font-weight: 600;
+          color: $secundary;
+          &:hover{
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  #mobile{
+    display: none;
+    .bm-menu{
+      background: white;
+    }
+    .bm-burger-button{
+      z-index: 6;
+      .bm-burger-bars{
+        background-color: $primary;
+        &.line-style{
+          border-radius: 0.25rem;
+        }
+      }
+    }
+    .bm-cross{
+      background: $primary;
+    }
+    span, a{
+      display: block;
+      color: $primary;
+      font-weight: 600;
     }
   }
   #logo{
@@ -22,27 +70,27 @@ header#super{
         fill: $secundary;
       }
     }
-    img{
-    }
   }
-  #desktop{
-    ul{
+}
+@include bp(max, $mediumBP){
+  header#super{
+    background: white;
+    .wrapper{
       padding: 0;
-      margin: 0;
-      width: 100%;
-      text-align: right;
-      li{
-        display: inline-block;
-        padding: 2rem 0.5rem;
-        font-size: 20px;
-        cursor: pointer;
-        transition: color 0.3s ease;
-        &:hover{
-          color: $primary;
+    }
+    #desktop{
+      display: none;
+    }
+    #mobile{
+      .columns{
+        .column{
+          margin-bottom: 0;
         }
       }
+      #logo{
+        margin-left: 1rem;
+      }
+      display: block;
     }
-  }
-  #mobile{
   }
 }

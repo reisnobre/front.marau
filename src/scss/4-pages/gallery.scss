@@ -1,0 +1,25 @@
+.page#gallery{
+  .galleryContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .photoContainer{
+      @include size(150px);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      margin: 0.25rem;
+      cursor: pointer;
+    }
+  }
+  .sweet-modal{
+    .sweet-content-content{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@include bp(max, $smallBP){
+}

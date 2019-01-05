@@ -1,4 +1,4 @@
-.page#plan{
+.page#contact{
   section.planSec{
     &#hero{
       .blur{
@@ -17,7 +17,7 @@
       display: block;
       .columns{
         .column{
-          padding: 1rem;
+          // padding: 1rem;
           flex-grow: 1;
         }
       }
@@ -47,23 +47,25 @@
           }
         }
       }
+      form{
+        padding-right: 1rem;
+      }
       input{
       }
       button{
-        width: calc(100% - 2rem);
+        width: 100%;
+        margin-top: 0;
       }
     }
   }
 }
 
 @include bp(max, $mediumBP){
-  .page#plan{
+  .page#contact{
     section.planSec{
       &#form{
-        .columns{
-          .column{
-            padding: 0;
-          }
+        form{
+          padding-right: 0;
         }
       }
     }

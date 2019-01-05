@@ -9,32 +9,42 @@
       max-width: 600px;
     }
     &#brome{
-      background-image: url('/img/backgrounds/brome.jpg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      .blur{
+        background-image: url('/img/backgrounds/brome.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
     &#lancha{
-      background-image: url('/img/backgrounds/lancha.jpg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      .blur{
+        background-image: url('/img/backgrounds/lancha.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
     &#farol{
-      background-image: url('/img/backgrounds/farol.jpg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      .blur{
+        background-image: url('/img/backgrounds/farol.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
     &#taipu{
-      background-image: url('/img/backgrounds/taipu.jpg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      .blur{
+        background-image: url('/img/backgrounds/taipu.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
     &#plan{
-      background-image: url('/img/icons/waves.svg');
-      background-color: $secundary;
+      .blur{
+        background-image: url('/img/icons/waves.svg');
+        background-color: $secundary;
+      }
     }
   }
 }

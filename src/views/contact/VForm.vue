@@ -1,43 +1,27 @@
 <template>
   <section class="planSec __small" id="form">
-    <form @submit.prevent="send" class="wrapper">
-      <div class="content">
-        <label>Data da Viagem</label>
-        <div class="columns">
-          <div class="column">
-            <date-picker format="DD/MM/YYYY" lang="en" placeholder="Chegada" :not-before="new Date()" v-model="checkIn" required></date-picker>
-            <!-- <input type="text" value="" name="" id=""/> -->
-          </div>
-          <div class="column">
-            <date-picker format="DD/MM/YYYY" lang="en" placeholder="Partida" :not-before="new Date(checkIn)" v-model="checkOut" required></date-picker>
-            <!-- <input type="text" value="" name="" id=""/> -->
-          </div>
-        </div>
-        <label>Informações para Contato</label>
-        <div class="columns">
-          <div class="column">
+    <div class="wrapper">
+      <div class="columns">
+        <div class="column">
+          <h3>Fale Conosco</h3>
+          <form @submit.prevent="send">
             <input v-model="name" placeholder="Nome" type="text" value="" name="" id="" required/>
             <input v-model="email" placeholder="Email" type="email" value="" name="" id="" required/>
             <input v-model="phone" placeholder="Telefone" v-mask="['(##) ####-####', '(##) #####-####']" type="phone" value="" name="" id="" required/>
-          </div>
+            <button class="__small" type="submit">Enviar</button>
+          </form>
         </div>
-        <label>Traslados</label>
-        <div class="columns">
-          <div class="column">
-            <input v-model="from" type="text" value="" name="" id="" placeholder="De"/>
-          </div>
-          <div class="column">
-            <input v-model="to" type="text" value="" name="" id="" placeholder="Para"/>
-          </div>
+        <div class="column">
+          <h3>Reservas</h3>
+          <h4><a href="tel:73999027066" target="_blank">(73) 99902.7066</a></h4>
+          <h4><a href="tel:73999814097" target="_blank">(73) 99981.4097</a></h4>
         </div>
       </div>
-      <button type="submit">Enviar</button>
-    </form>
+    </div>
   </section>
 </template>
 
 <script>
-import datePicker from 'vue2-datepicker'
 export default {
   name: 'vForm',
   data () {
@@ -78,7 +62,6 @@ export default {
     }
   },
   components: {
-    datePicker
   }
 }
 </script>

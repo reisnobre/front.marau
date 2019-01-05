@@ -1,5 +1,6 @@
 <template>
   <section class="ridesSec __small" id="taipu">
+    <div class="blur"></div>
     <div class="wrapper">
       <div class="content">
         <h2>Taipu de Fora e Taipu de Dentro</h2>

@@ -1,5 +1,6 @@
 <template>
   <section class="ridesSec" id="plan">
+    <div class="blur"></div>
     <div class="wrapper">
       <div class="content">
         <h2>Planeje sua viagem</h2>
