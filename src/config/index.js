@@ -1,12 +1,7 @@
 const env = process.env.NODE_ENV
-const dev = 'http://68.183.137.83/wordpress/wp-json/wp/v2'
-const prod = 'http://68.183.137.83/wordpress/wp-json/wp/v2'
-
-const cms = (target, query) => {
-  if (env === 'production') return `${prod}/${target}?${query}`
-  return `${dev}/${target}?${query}`
-}
+const cms = (target, query) => `https://cms.marauturismo.com/wp-json/wp/v2/${target}?${query}`
+const mail = (env === 'production' ? 'https://mail.marauturismo.com/' : 'http://localhost:8000/') + 'api/contact'
 
 export {
-  cms
+  cms, mail
 }

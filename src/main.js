@@ -10,6 +10,7 @@ import { cms, mail } from './config'
 
 Vue.prototype.$http = axios
 Vue.prototype.$cms = cms
+Vue.prototype.$mail = mail
 Vue.use(VueTheMask)
 Vue.use(VueToasted)
 

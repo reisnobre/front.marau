@@ -1,0 +1,17 @@
+footer#super{
+  width: 100%;
+  background: $secundary;
+  &.__revert{
+    background: $primary;
+    h4{
+      color: white;
+      a{
+        color: $secundary;
+      }
+    }
+  }
+  h4{
+    padding: 2rem 0;
+    margin: 0;
+  }
+}

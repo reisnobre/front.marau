@@ -57,23 +57,35 @@ export default {
   },
   methods: {
     send () {
-      // let data = {
-      //   checkIn: this.checkIn,
-      //   checkOut: this.checkOut,
-      //   name: this.name,
-      //   email: this.email,
-      //   phone: this.phone,
-      //   from: this.from,
-      //   to: this.to
-      // }
-      // this.$http.post('')
-      this.$toasted.success('Email enviado com sucesso, entraremos em contato em breve!', {
-        theme: 'outline',
-        position: 'top-center',
-        duration: 3000,
-        onComplete: () => {
-          this.$router.push({ name: 'home' })
-        }
+      let data = {
+        checkIn: this.checkIn,
+        checkOut: this.checkOut,
+        name: this.name,
+        email: this.email,
+        phone: this.phone,
+        from: this.from,
+        to: this.to
+      }
+      console.log(data)
+      this.$http.post(this.$mail, data).then(response => {
+        this.$toasted.success('Email enviado com sucesso, entraremos em contato em breve!', {
+          theme: 'outline',
+          position: 'top-center',
+          duration: 3000,
+          onComplete: () => {
+            this.$router.push({ name: 'home' })
+          }
+        })
+      }).catch(err => {
+        console.log(err)
+        this.$toasted.error('Algo de errado aconteceu. Tente novamente.', {
+          theme: 'outline',
+          position: 'top-center',
+          duration: 3000,
+          onComplete: () => {
+            this.$router.push({ name: 'home' })
+          }
+        })
       })
     }
   },
